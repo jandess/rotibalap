@@ -1,0 +1,9 @@
+{
+  "name": "bot-djandes",
+  "version": "1.0.0",
+  "description": "Bot Pemesanan Telegram",
+  "main": "api/bot.js",
+  "dependencies": {
+    "node-telegram-bot-api": "^0.65.0"
+  }
+}
