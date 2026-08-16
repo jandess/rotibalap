@@ -37,7 +37,6 @@ export default async function handler(req, res) {
             return res.status(200).send('OK');
         }
 
-        // Tampilkan Daftar Harga Teks Terkategori
         if (text === '📋 Cek Daftar Harga') {
             const parcels = data.products.filter(p => p.name.toLowerCase().includes('parcel'));
             const kues = data.products.filter(p => !p.name.toLowerCase().includes('parcel'));
@@ -57,12 +56,12 @@ export default async function handler(req, res) {
             return res.status(200).send('OK');
         }
 
-        // Mulai Pemesanan
         if (text === '/pesan' || text === '🛍️ Pesan Sekarang') {
             userOrders[chatId] = { items: {}, pkg: null, variant: null, year: null, month: null, date: null, hour: null };
             await bot.sendMessage(chatId, "Silakan pilih menu kue yang ingin dipesan:", {
                 reply_markup: getMenuKeyboard(chatId)
             });
+            return res.status(200).send('OK');
         }
       }
 
@@ -74,9 +73,10 @@ export default async function handler(req, res) {
         const chatId = query.message.chat.id;
         const action = query.data;
 
-        // Beri respon cepat agar loading di Telegram berhenti jika diklik di tombol netral
+        // Respon cepat untuk tombol netral (yang tidak punya aksi)
         if (action === 'noop') {
-            return bot.answerCallbackQuery(query.id);
+            await bot.answerCallbackQuery(query.id);
+            return res.status(200).send('OK');
         }
 
         if (!userOrders[chatId]) {
@@ -85,7 +85,7 @@ export default async function handler(req, res) {
         const order = userOrders[chatId];
         const currentQty = getTotalQty(order);
 
-        // --- A. MENU: TAMBAH, KURANGI, RESET, KEMBALI ---
+        // --- A. KEMBALI KE MENU ---
         if (action === 'back_menu') {
             await bot.editMessageText("Silakan pilih menu kue yang ingin dipesan:", {
                 chat_id: chatId, message_id: query.message.message_id,
@@ -93,8 +93,17 @@ export default async function handler(req, res) {
             });
             await bot.answerCallbackQuery(query.id);
         } 
+        
+        // --- B. MENU: TAMBAH, KURANGI, RESET ---
         else if (action.startsWith('add_') || action.startsWith('min_') || action === 'reset') {
-          if (action.startsWith('add_')) {
+          if (action === 'reset') {
+              if (Object.keys(order.items).length === 0) {
+                  await bot.answerCallbackQuery(query.id, { text: "⚠️ Keranjang Anda sudah kosong!", show_alert: true });
+                  return res.status(200).send('OK'); // Mencegah bot loading terus
+              }
+              order.items = {};
+          }
+          else if (action.startsWith('add_')) {
               const id = action.split('_')[1];
               const product = data.products.find(p => p.id.toString() === id);
               if (product) {
@@ -109,24 +118,23 @@ export default async function handler(req, res) {
                   if (order.items[id].qty <= 0) delete order.items[id];
               }
           }
-          else if (action === 'reset') {
-              // PERBAIKAN BUG LOADING: Cek jika keranjang sudah kosong
-              if (Object.keys(order.items).length === 0) {
-                  return bot.answerCallbackQuery(query.id, { text: "⚠️ Keranjang Anda sudah kosong!", show_alert: true });
-              }
-              order.items = {};
-          }
           
-          await bot.editMessageReplyMarkup(getMenuKeyboard(chatId), { chat_id: chatId, message_id: query.message.message_id });
+          try {
+              await bot.editMessageReplyMarkup(getMenuKeyboard(chatId), { chat_id: chatId, message_id: query.message.message_id });
+          } catch (e) {
+              // Abaikan error jika Telegram menganggap tidak ada perubahan tampilan
+          }
           await bot.answerCallbackQuery(query.id);
         }
 
-        // --- B. KEMASAN (DIKALIKAN QTY) ---
+        // --- C. LANJUT KEMASAN (DENGAN PROTEKSI KERANJANG KOSONG) ---
         else if (action === 'next_pkg' || action === 'back_pkg') {
-          if (currentQty === 0) return bot.answerCallbackQuery(query.id, { text: "⚠️ Silakan pilih minimal 1 kue terlebih dahulu!", show_alert: true });
+          if (currentQty === 0) {
+              await bot.answerCallbackQuery(query.id, { text: "⚠️ Silakan pilih minimal 1 kue terlebih dahulu!", show_alert: true });
+              return res.status(200).send('OK'); // Mencegah bot loading terus
+          }
           
           let keyboard = data.packagingTypes.map(t => ([{ 
-              // Harga Box dikalikan dengan total jumlah kue (per item)
               text: `${t.id_tipe} (+Rp ${(t.harga_tambahan * currentQty).toLocaleString('id-ID')})`, 
               callback_data: `pkg_${t.id_tipe}` 
           }]));
@@ -139,7 +147,7 @@ export default async function handler(req, res) {
           await bot.answerCallbackQuery(query.id);
         }
 
-        // --- C. VARIAN KEMASAN ---
+        // --- D. VARIAN KEMASAN ---
         else if (action.startsWith('pkg_') || action === 'back_var') {
           if (action.startsWith('pkg_')) order.pkg = data.packagingTypes.find(t => t.id_tipe === action.split('_')[1]);
 
@@ -154,7 +162,7 @@ export default async function handler(req, res) {
           await bot.answerCallbackQuery(query.id);
         }
 
-        // --- D. TAHUN PENGAMBILAN ---
+        // --- E. TAHUN PENGAMBILAN ---
         else if (action.startsWith('var_') || action === 'back_yr') {
           if (action.startsWith('var_')) order.variant = data.packagingVariants.find(v => v.id_varian === action.split('_')[1]);
 
@@ -172,7 +180,7 @@ export default async function handler(req, res) {
           await bot.answerCallbackQuery(query.id);
         }
 
-        // --- E. BULAN PENGAMBILAN ---
+        // --- F. BULAN PENGAMBILAN ---
         else if (action.startsWith('yr_') || action === 'back_mo') {
             if (action.startsWith('yr_')) order.year = parseInt(action.split('_')[1]);
             
@@ -194,7 +202,7 @@ export default async function handler(req, res) {
             await bot.answerCallbackQuery(query.id);
         }
 
-        // --- F. TANGGAL PENGAMBILAN ---
+        // --- G. TANGGAL PENGAMBILAN ---
         else if (action.startsWith('mo_') || action === 'back_dt') {
             if (action.startsWith('mo_')) order.month = parseInt(action.split('_')[1]);
             
@@ -217,7 +225,7 @@ export default async function handler(req, res) {
             await bot.answerCallbackQuery(query.id);
         }
 
-        // --- G. JAM PENGAMBILAN ---
+        // --- H. JAM PENGAMBILAN ---
         else if (action.startsWith('dt_') || action === 'back_hr') {
             if (action.startsWith('dt_')) order.date = parseInt(action.split('_')[1]);
             
@@ -240,7 +248,7 @@ export default async function handler(req, res) {
             await bot.answerCallbackQuery(query.id);
         }
 
-        // --- H. REVIEW SEBELUM CETAK ---
+        // --- I. REVIEW SEBELUM CETAK ---
         else if (action.startsWith('hr_')) {
             order.hour = action.split('_')[1];
             
@@ -255,12 +263,11 @@ export default async function handler(req, res) {
             await bot.answerCallbackQuery(query.id);
         }
 
-        // --- I. CETAK INVOICE FINAL ---
+        // --- J. CETAK INVOICE FINAL ---
         else if (action === 'checkout_final') {
           let detailTeks = "";
           let totalHarga = 0;
           
-          // Rekap produk
           for (let id in order.items) {
               const item = order.items[id];
               const subtotal = item.product.price * item.qty;
@@ -268,7 +275,6 @@ export default async function handler(req, res) {
               totalHarga += subtotal;
           }
           
-          // Rekap kemasan berlipat sesuai jumlah item
           if (order.pkg) {
              const pkgTotal = order.pkg.harga_tambahan * currentQty;
              detailTeks += `- Kemasan ${order.pkg.id_tipe} (${order.variant ? order.variant.name : ''}) (${currentQty}x): Rp ${pkgTotal.toLocaleString('id-ID')}\n`;
@@ -299,31 +305,26 @@ export default async function handler(req, res) {
         console.error("Bot Error:", error);
     }
     
+    // Titik paling krusial: Memastikan webhook selalu diakhiri dengan status 200
     res.status(200).send('OK');
   } else {
     res.status(200).send('Server Bot DJANDES Sedang Berjalan Sempurna!');
   }
 }
 
-// Fungsi pembantu untuk membuat daftar menu A-Z tanpa harga dan dinamis (ada [-] dan [+])
 function getMenuKeyboard(chatId) {
     const order = userOrders[chatId];
-    
-    // Mengurutkan produk A-Z berdasarkan nama
     const sortedProducts = [...data.products].sort((a, b) => a.name.localeCompare(b.name));
     
     let keyboard = sortedProducts.map(p => {
         const qty = order?.items[p.id]?.qty || 0;
         
-        // Jika belum ada di keranjang, tampilkan tombol utuh nama produk saja
         if (qty === 0) {
             return [{ text: p.name, callback_data: `add_${p.id}` }];
-        } 
-        // Jika sudah ada, pecah jadi 3 tombol: [-]  ✅ Nama (Qty)  [+]
-        else {
+        } else {
             return [
                 { text: "➖", callback_data: `min_${p.id}` },
-                { text: `✅ ${p.name} (${qty}x)`, callback_data: `noop` }, // noop = tidak melakukan aksi apa-apa
+                { text: `✅ ${p.name} (${qty}x)`, callback_data: `noop` },
                 { text: "➕", callback_data: `add_${p.id}` }
             ];
         }
