@@ -1,0 +1,612 @@
+{
+  "categories": [
+    {
+      "id": "CAT001",
+      "name": "Hantaran"
+    }
+  ],
+  "packagingTypes": [
+    {
+      "id_tipe": "Standard",
+      "harga_tambahan": 0
+    },
+    {
+      "id_tipe": "Artificial bunga",
+      "harga_tambahan": 18000
+    }
+  ],
+  "packagingVariants": [
+    {
+      "id_varian": "VAR002",
+      "id_tipe": "Artificial bunga",
+      "name": "Biru",
+      "img": "https://cdn.jsdelivr.net/gh/jandess/katalog@main/img/img_1783473322555_artifial_Biru.jpg",
+      "images": [
+        "https://cdn.jsdelivr.net/gh/jandess/katalog@main/img/img_1783473322555_artifial_Biru.jpg"
+      ],
+      "desc": "Kotak seserahan mewah berbahan hardbox kokoh berwarna biru muda dengan tutup mika transparan yang elegan. Bagian sudut dipercantik ornamen siku emas, serta dipermanis dengan balutan kain tile dan hiasan bunga artifisial di bagian atas. Memberikan kesan rapi, eksklusif, dan siap mempercantik momen spesial Anda.",
+      "features": [
+        "Material berkualitas, kokoh dan tahan.",
+        "Ramah lingkungan.",
+        "Desain elegan Artificial bunga."
+      ]
+    },
+    {
+      "id_varian": "VAR003",
+      "id_tipe": "Artificial bunga",
+      "name": "Pink",
+      "img": "https://cdn.jsdelivr.net/gh/jandess/katalog@main/img/img_1783477426734_artifial_pink.jpg",
+      "images": [
+        "https://cdn.jsdelivr.net/gh/jandess/katalog@main/img/img_1783477426734_artifial_pink.jpg"
+      ],
+      "desc": "Kotak seserahan mewah berbahan hardbox kokoh berwarna Merah muda dengan tutup mika transparan yang elegan. Bagian sudut dipercantik ornamen siku emas, serta dipermanis dengan balutan kain tile dan hiasan bunga artifisial di bagian atas. Memberikan kesan rapi, eksklusif, dan siap mempercantik momen spesial Anda.",
+      "features": [
+        "Material berkualitas, kokoh dan tahan.",
+        "Ramah lingkungan.",
+        "Desain elegan Artificial bunga."
+      ]
+    },
+    {
+      "id_varian": "VAR004",
+      "id_tipe": "Artificial bunga",
+      "name": "Marun",
+      "img": "https://cdn.jsdelivr.net/gh/jandess/katalog@main/img/img_1783476451170_artifial_marun.jpg",
+      "images": [
+        "https://cdn.jsdelivr.net/gh/jandess/katalog@main/img/img_1783476451170_artifial_marun.jpg"
+      ],
+      "desc": "Kotak seserahan mewah berbahan hardbox kokoh berwarna Merah marun dengan tutup mika transparan yang elegan. Bagian sudut dipercantik ornamen siku emas, serta dipermanis dengan balutan kain tile dan hiasan bunga artifisial di bagian atas. Memberikan kesan rapi, eksklusif, dan siap mempercantik momen spesial Anda.",
+      "features": [
+        "Material berkualitas, kokoh dan tahan.",
+        "Ramah lingkungan.",
+        "Desain elegan Artificial bunga."
+      ]
+    },
+    {
+      "id_varian": "VAR011",
+      "id_tipe": "Standard",
+      "name": "Pink",
+      "img": "https://cdn.jsdelivr.net/gh/jandess/katalog@main/img/stpink.jpg",
+      "images": [
+        "https://cdn.jsdelivr.net/gh/jandess/katalog@main/img/stpink.jpg"
+      ],
+      "desc": "Kotak seserahan mewah berbahan hardbox kokoh berwarna Merah muda dengan tutup mika transparan yang elegan. Bagian sudut dipercantik ornamen siku emas, serta dipermanis dengan balutan kain tile dan hiasan pita & bunga di bagian atas. Memberikan kesan rapi, eksklusif, dan siap mempercantik momen spesial Anda.",
+      "features": [
+        "Material berkualitas, kokoh dan tahan.",
+        "Ramah lingkungan.",
+        "Desain minimalis dan elegan."
+      ]
+    },
+    {
+      "id_varian": "VAR012",
+      "id_tipe": "Standard",
+      "name": "Marun",
+      "img": "https://cdn.jsdelivr.net/gh/jandess/katalog@main/img/stmarun.jpg",
+      "images": [
+        "https://cdn.jsdelivr.net/gh/jandess/katalog@main/img/stmarun.jpg"
+      ],
+      "desc": "Kotak seserahan mewah berbahan hardbox kokoh berwarna merah marun dengan tutup mika transparan yang elegan. Bagian sudut dipercantik ornamen siku emas, serta dipermanis dengan balutan kain tile dan hiasan pita & bunga di bagian atas. Memberikan kesan rapi, eksklusif, dan siap mempercantik momen spesial Anda.",
+      "features": [
+        "Material berkualitas, kokoh dan tahan.",
+        "Ramah lingkungan.",
+        "Desain minimalis dan elegan."
+      ]
+    },
+    {
+      "id_varian": "VAR013",
+      "id_tipe": "Standard",
+      "name": "Hijau",
+      "img": "https://cdn.jsdelivr.net/gh/jandess/katalog@main/img/sthijau.jpg",
+      "images": [
+        "https://cdn.jsdelivr.net/gh/jandess/katalog@main/img/sthijau.jpg"
+      ],
+      "desc": "Kotak seserahan mewah berbahan hardbox kokoh berwarna hijau dengan tutup mika transparan yang elegan. Bagian sudut dipercantik ornamen siku emas, serta dipermanis dengan balutan kain tile dan hiasan pita & bunga di bagian atas. Memberikan kesan rapi, eksklusif, dan siap mempercantik momen spesial Anda.",
+      "features": [
+        "Material berkualitas, kokoh dan tahan.",
+        "Ramah lingkungan.",
+        "Desain minimalis dan elegan."
+      ]
+    },
+    {
+      "id_varian": "VAR014",
+      "id_tipe": "Standard",
+      "name": "Golden brown",
+      "img": "https://cdn.jsdelivr.net/gh/jandess/katalog@main/img/stgold.jpg",
+      "images": [
+        "https://cdn.jsdelivr.net/gh/jandess/katalog@main/img/stgold.jpg"
+      ],
+      "desc": "Kotak seserahan mewah berbahan hardbox kokoh berwarna gold dengan tutup mika transparan yang elegan. Bagian sudut dipercantik ornamen siku emas, serta dipermanis dengan balutan kain tile dan hiasan pita & bunga di bagian atas. Memberikan kesan rapi, eksklusif, dan siap mempercantik momen spesial Anda.",
+      "features": [
+        "Material berkualitas, kokoh dan tahan.",
+        "Ramah lingkungan.",
+        "Desain minimalis dan elegan."
+      ]
+    },
+    {
+      "id_varian": "VAR015",
+      "id_tipe": "Standard",
+      "name": "Navy",
+      "img": "https://cdn.jsdelivr.net/gh/jandess/katalog@main/img/stnavy.jpg",
+      "images": [
+        "https://cdn.jsdelivr.net/gh/jandess/katalog@main/img/stnavy.jpg"
+      ],
+      "desc": "Kotak seserahan mewah berbahan hardbox kokoh berwarna navy dengan tutup mika transparan yang elegan. Bagian sudut dipercantik ornamen siku emas, serta dipermanis dengan balutan kain tile dan hiasan pita & bunga di bagian atas. Memberikan kesan rapi, eksklusif, dan siap mempercantik momen spesial Anda.",
+      "features": [
+        "Material berkualitas, kokoh dan tahan.",
+        "Ramah lingkungan.",
+        "Desain minimalis dan elegan."
+      ]
+    },
+    {
+      "id_varian": "VAR006",
+      "id_tipe": "Artificial bunga",
+      "name": "Hijau",
+      "img": "https://cdn.jsdelivr.net/gh/jandess/katalog@main/img/artifial_hijau.jpg",
+      "images": [
+        "https://cdn.jsdelivr.net/gh/jandess/katalog@main/img/artifial_hijau.jpg"
+      ],
+      "desc": "Kotak seserahan mewah berbahan hardbox kokoh berwarna hijau dengan tutup mika transparan yang elegan. Bagian sudut dipercantik ornamen siku emas, serta dipermanis dengan balutan kain tile dan hiasan bunga artifisial di bagian atas. Memberikan kesan rapi, eksklusif, dan siap mempercantik momen spesial Anda.",
+      "features": [
+        "Material berkualitas, kokoh dan tahan.",
+        "Ramah lingkungan.",
+        "Desain elegan Artificial bunga."
+      ]
+    },
+    {
+      "id_varian": "VAR005",
+      "id_tipe": "Artificial bunga",
+      "name": "Golden brown",
+      "img": "https://cdn.jsdelivr.net/gh/jandess/katalog@main/img/artifial_gold.jpg",
+      "images": [
+        "https://cdn.jsdelivr.net/gh/jandess/katalog@main/img/artifial_gold.jpg",
+        "https://cdn.jsdelivr.net/gh/jandess/katalog@main/img/artifial_gold2.jpg"
+      ],
+      "desc": "Kotak seserahan mewah berbahan hardbox kokoh berwarna gold dengan tutup mika transparan yang elegan. Bagian sudut dipercantik ornamen siku emas, serta dipermanis dengan balutan kain tile dan hiasan bunga artifisial di bagian atas. Memberikan kesan rapi, eksklusif, dan siap mempercantik momen spesial Anda.",
+      "features": [
+        "Material berkualitas, kokoh dan tahan.",
+        "Ramah lingkungan.",
+        "Desain elegan Artificial bunga."
+      ]
+    }
+  ],
+  "products": [
+    {
+      "id": 1761330047080,
+      "name": "Lemper Kipas",
+      "price": 165000,
+      "cat": "Hantaran",
+      "img": "https://cdn.jsdelivr.net/gh/jandess/katalog@main/img/gal_1783422423589_26j9ok_Lemper.jpg",
+      "images": [
+        "https://cdn.jsdelivr.net/gh/jandess/katalog@main/img/gal_1783422423589_26j9ok_Lemper.jpg"
+      ],
+      "desc": "terbuat dari ketan pulen berisi abon atau ayam suwir berbumbu gurih, kemudian dibungkus dengan daun pisang dan dikukus.",
+      "bestseller": false,
+      "isNew": false,
+      "isPromo": false,
+      "isOutOfStock": false
+    },
+    {
+      "id": 1761330657461,
+      "name": "Bolen pisang",
+      "price": 160000,
+      "cat": "Hantaran",
+      "img": "https://cdn.jsdelivr.net/gh/jandess/katalog@main/img/gal_1783426821909_de48kr_bolen.jpg",
+      "images": [
+        "https://cdn.jsdelivr.net/gh/jandess/katalog@main/img/gal_1783426821909_de48kr_bolen.jpg",
+        "https://cdn.jsdelivr.net/gh/jandess/katalog@main/img/gal_1783426824212_t8eqlm_bolen2.jpg"
+      ],
+      "desc": "kue pastry berlapis renyah yang berisi irisan pisang dan cokelat atau keju di dalamnya.",
+      "bestseller": false,
+      "isNew": false,
+      "isPromo": false
+    },
+    {
+      "id": 1761365259154,
+      "name": "Bolu gulung Toping",
+      "price": 250000,
+      "cat": "Hantaran",
+      "img": "https://cdn.jsdelivr.net/gh/jandess/katalog@main/img/gal_1783426774265_w3ylu_bolugulung2.jpg",
+      "images": [
+        "https://cdn.jsdelivr.net/gh/jandess/katalog@main/img/gal_1783426774265_w3ylu_bolugulung2.jpg",
+        "https://cdn.jsdelivr.net/gh/jandess/katalog@main/img/gal_1783426771557_1a3s9_bolugulung.jpg"
+      ],
+      "desc": "kue lembut berbentuk gulungan yang diisi selai manis atau krim lembut, kemudian diberi topping menarik seperti keju, cokelat, atau meses di atasnya.",
+      "bestseller": false,
+      "isNew": false,
+      "isPromo": false
+    },
+    {
+      "id": 1761365369638,
+      "name": "Wingko babat",
+      "price": 175000,
+      "cat": "Hantaran",
+      "img": "https://cdn.jsdelivr.net/gh/jandess/katalog@main/img/gal_1783426716685_2k8nk_wingko.jpg",
+      "images": [
+        "https://cdn.jsdelivr.net/gh/jandess/katalog@main/img/gal_1783426716685_2k8nk_wingko.jpg"
+      ],
+      "desc": "terbuat dari kelapa parut, tepung ketan, gula, dan santan, kemudian dipanggang hingga beraroma harum dan bertekstur kenyal legit.",
+      "bestseller": false,
+      "isNew": false,
+      "isPromo": false
+    },
+    {
+      "id": 1761365440506,
+      "name": "Brownies",
+      "price": 180000,
+      "cat": "Hantaran",
+      "img": "https://rboiicqwzcdjxhnhkzkl.supabase.co/storage/v1/object/public/product-images/products/1780658419904-8fqh2d50s1e.jpg",
+      "images": [
+        "https://rboiicqwzcdjxhnhkzkl.supabase.co/storage/v1/object/public/product-images/products/1780658419904-8fqh2d50s1e.jpg",
+        "https://rboiicqwzcdjxhnhkzkl.supabase.co/storage/v1/object/public/product-images/products/1780658419904-8fqh2d50s1e.jpg",
+        "https://rboiicqwzcdjxhnhkzkl.supabase.co/storage/v1/object/public/product-images/products/1780658419904-8fqh2d50s1e.jpg"
+      ],
+      "desc": "Fudgy brownies adalah jenis brownies yang memiliki tekstur lembut, padat, dan sangat kenyal di dalamnya. Terbuat dari campuran cokelat leleh, mentega, telur, gula, dan sedikit tepung.",
+      "bestseller": false,
+      "isNew": false,
+      "isPromo": false
+    },
+    {
+      "id": 1761365520498,
+      "name": "Telur asin",
+      "price": 225000,
+      "cat": "Hantaran",
+      "img": "https://cdn.jsdelivr.net/gh/jandess/katalog@main/img/gal_1783426674337_wmrwbl_telurasin.jpg",
+      "images": [
+        "https://cdn.jsdelivr.net/gh/jandess/katalog@main/img/gal_1783426674337_wmrwbl_telurasin.jpg"
+      ],
+      "desc": "olahan telur bebek yang diawetkan dengan cara direndam dalam larutan garam atau dibalut adonan garam dan abu, menghasilkan rasa gurih dan asin khas.",
+      "bestseller": false,
+      "isNew": false,
+      "isPromo": false
+    },
+    {
+      "id": 1761365597291,
+      "name": "Lumpia Tower",
+      "price": 160000,
+      "cat": "Hantaran",
+      "img": "https://cdn.jsdelivr.net/gh/jandess/katalog@main/img/gal_1783426053285_1acwgh_soslo.jpg",
+      "images": [
+        "https://cdn.jsdelivr.net/gh/jandess/katalog@main/img/gal_1783426053285_1acwgh_soslo.jpg"
+      ],
+      "desc": "sajian lumpia yang disusun tinggi menyerupai tower, berisi sayuran segar, ayam, atau daging cincang dengan kulit lumpia renyah.",
+      "bestseller": false,
+      "isNew": false,
+      "isPromo": false
+    },
+    {
+      "id": 1761365658085,
+      "name": "Kue thok",
+      "price": 160000,
+      "cat": "Hantaran",
+      "img": "https://cdn.jsdelivr.net/gh/jandess/katalog@main/img/gal_1783426621990_wk3z0h_kuethok.jpg",
+      "images": [
+        "https://cdn.jsdelivr.net/gh/jandess/katalog@main/img/gal_1783426621990_wk3z0h_kuethok.jpg"
+      ],
+      "desc": "berbahan dasar tepung ketan dan isian kacang hijau kupas, dibentuk tebal dan padat dengan tekstur kenyal dan lembut.",
+      "bestseller": false,
+      "isNew": false,
+      "isPromo": false
+    },
+    {
+      "id": 1761365742441,
+      "name": "Putu ayu - Saus gula merah",
+      "price": 137500,
+      "cat": "Hantaran",
+      "img": "https://cdn.jsdelivr.net/gh/jandess/katalog@main/img/gal_1783426604773_r1ygr_PutuayuSausgulamerah.jpg",
+      "images": [
+        "https://cdn.jsdelivr.net/gh/jandess/katalog@main/img/gal_1783426604773_r1ygr_PutuayuSausgulamerah.jpg"
+      ],
+      "desc": "kue tradisional lembut berbahan dasar tepung terigu, kelapa parut, dan santan, dengan bentuk cantik berlapis kelapa di atasnya. Disajikan bersama saus gula merah kental dan manis.",
+      "bestseller": false,
+      "isNew": false,
+      "isPromo": false
+    },
+    {
+      "id": 1761365789770,
+      "name": "Jadah Ketan",
+      "price": 180000,
+      "cat": "Hantaran",
+      "img": "https://cdn.jsdelivr.net/gh/jandess/katalog@main/img/gal_1783426499371_tmmzzv_jadah.jpg",
+      "images": [
+        "https://cdn.jsdelivr.net/gh/jandess/katalog@main/img/gal_1783426499371_tmmzzv_jadah.jpg"
+      ],
+      "desc": "Makanan ini terbuat dari ketan (beras ketan) yang dimasak dengan kelapa parut, memberikan rasa gurih yang lezat dan dipadatkan, lalu dibentuk menjadi bentuk hati .",
+      "bestseller": false,
+      "isNew": false,
+      "isPromo": false
+    },
+    {
+      "id": 1761365848544,
+      "name": "Putu Ayu clasic",
+      "price": 125000,
+      "cat": "Hantaran",
+      "img": "https://cdn.jsdelivr.net/gh/jandess/katalog@main/img/gal_1783426480491_4l2egg_PutuAyuclasic.jpg",
+      "images": [
+        "https://cdn.jsdelivr.net/gh/jandess/katalog@main/img/gal_1783426480491_4l2egg_PutuAyuclasic.jpg"
+      ],
+      "desc": "kue tradisional lembut berbahan dasar tepung terigu, kelapa parut, dan santan, dengan bentuk cantik berlapis kelapa di atasnya.",
+      "bestseller": false,
+      "isNew": false,
+      "isPromo": false
+    },
+    {
+      "id": 1761366079491,
+      "name": "Wajik ketan - gula merah",
+      "price": 200000,
+      "cat": "Hantaran",
+      "img": "https://cdn.jsdelivr.net/gh/jandess/katalog@main/img/gal_1783426428495_roaeiz_wajik.jpg",
+      "images": [
+        "https://cdn.jsdelivr.net/gh/jandess/katalog@main/img/gal_1783426428495_roaeiz_wajik.jpg"
+      ],
+      "desc": "Terbuat dari beras ketan dan gula merah, menghasilkan rasa manis legit dengan aroma khas kelapa dan karamel dari gula merah. Teksturnya lengket dan kenyal, mirip dengan jadah, tetapi wajik biasanya lebih manis dan padat.",
+      "bestseller": false,
+      "isNew": false,
+      "isPromo": false
+    },
+    {
+      "id": 1761366457110,
+      "name": "Puding susu clasic + Vla",
+      "price": 146000,
+      "cat": "Hantaran",
+      "img": "https://cdn.jsdelivr.net/gh/jandess/katalog@main/img/gal_1783426389742_myd62h_pudingsusu.jpg",
+      "images": [
+        "https://cdn.jsdelivr.net/gh/jandess/katalog@main/img/gal_1783426389742_myd62h_pudingsusu.jpg"
+      ],
+      "desc": "terbuat dari susu murni, agar-agar, dan sedikit gula, menghasilkan rasa manis ringan dan creamy. Disajikan dengan vla vanila lembut di atasnya.",
+      "bestseller": false,
+      "isNew": false,
+      "isPromo": false
+    },
+    {
+      "id": 1761366531770,
+      "name": "Caramel",
+      "price": 120000,
+      "cat": "Hantaran",
+      "img": "https://cdn.jsdelivr.net/gh/jandess/katalog@main/img/gal_1783426374775_0zuipb_caramel.jpg",
+      "images": [
+        "https://cdn.jsdelivr.net/gh/jandess/katalog@main/img/gal_1783426374775_0zuipb_caramel.jpg"
+      ],
+      "desc": "Terbuat dari gula yang dimasak hingga menjadi karamel, kemudian dicampur dengan adonan tepung dan telur.",
+      "bestseller": false,
+      "isNew": false,
+      "isPromo": false
+    },
+    {
+      "id": 1761368585958,
+      "name": "Pie buah",
+      "price": 162000,
+      "cat": "Hantaran",
+      "img": "https://cdn.jsdelivr.net/gh/jandess/katalog@main/img/gal_1783426115622_bqk1oy_bikang.jpeg",
+      "images": [
+        "https://cdn.jsdelivr.net/gh/jandess/katalog@main/img/gal_1783426115622_bqk1oy_bikang.jpeg"
+      ],
+      "desc": "kue tart mini dengan kulit pastry renyah yang diisi vla lembut dan dihias dengan aneka potongan buah segar di atasnya.",
+      "bestseller": false,
+      "isNew": false,
+      "isPromo": false
+    },
+    {
+      "id": 1761368682877,
+      "name": "Pie brownies",
+      "price": 148000,
+      "cat": "Hantaran",
+      "img": "https://cdn.jsdelivr.net/gh/jandess/katalog@main/img/gal_1783426329673_0aj599_piebrownies.jpg",
+      "images": [
+        "https://cdn.jsdelivr.net/gh/jandess/katalog@main/img/gal_1783426329673_0aj599_piebrownies.jpg"
+      ],
+      "desc": "Perpaduan lezat antara kulit pie renyah dan isian brownies cokelat lembut di dalamnya.",
+      "bestseller": false,
+      "isNew": false,
+      "isPromo": false
+    },
+    {
+      "id": 1761368763118,
+      "name": "Onde - onde",
+      "price": 137500,
+      "cat": "Hantaran",
+      "img": "https://cdn.jsdelivr.net/gh/jandess/katalog@main/img/gal_1783426263535_ajasrp_onde.jpg",
+      "images": [
+        "https://cdn.jsdelivr.net/gh/jandess/katalog@main/img/gal_1783426263535_ajasrp_onde.jpg"
+      ],
+      "desc": "Jajanan tradisional berbentuk bulat yang terbuat dari tepung ketan, berisi kacang hijau manis, dan dilapisi taburan wijen di bagian luar.",
+      "bestseller": false,
+      "isNew": false,
+      "isPromo": false
+    },
+    {
+      "id": 1761369387340,
+      "name": "Puff Pastry",
+      "price": 137500,
+      "cat": "Hantaran",
+      "img": "https://cdn.jsdelivr.net/gh/jandess/katalog@main/img/gal_1783426217406_mev0a_pastry2.jpg",
+      "images": [
+        "https://cdn.jsdelivr.net/gh/jandess/katalog@main/img/gal_1783426217406_mev0a_pastry2.jpg",
+        "https://cdn.jsdelivr.net/gh/jandess/katalog@main/img/gal_1783426214009_1c5vbno_pastry.jpg"
+      ],
+      "desc": "pastry berlapis yang dibuat dari adonan tepung dan menteba sehingga menghasilkan tekstur ringan, renyah, dan berlapis-lapis saat dipanggang.",
+      "bestseller": false,
+      "isNew": false,
+      "isPromo": false
+    },
+    {
+      "id": 1761369459952,
+      "name": "Dadar gulung mawar",
+      "price": 137500,
+      "cat": "Hantaran",
+      "img": "https://cdn.jsdelivr.net/gh/jandess/katalog@main/img/gal_1783426155189_bnsov8_dadargulungmawar.jpg",
+      "images": [
+        "https://cdn.jsdelivr.net/gh/jandess/katalog@main/img/gal_1783426155189_bnsov8_dadargulungmawar.jpg"
+      ],
+      "desc": "dadar gulung pandan yang diisi kelapa parut manis dan dibentuk menyerupai bunga mawar cantik.",
+      "bestseller": false,
+      "isNew": false,
+      "isPromo": false
+    },
+    {
+      "id": 1761369522206,
+      "name": "Bikang",
+      "price": 125000,
+      "cat": "Hantaran",
+      "img": "https://cdn.jsdelivr.net/gh/jandess/katalog@main/img/gal_1783426115622_bqk1oy_bikang.jpeg",
+      "images": [
+        "https://cdn.jsdelivr.net/gh/jandess/katalog@main/img/gal_1783426115622_bqk1oy_bikang.jpeg"
+      ],
+      "desc": "kue tradisional berbentuk bunga besar atau motif unik, terbuat dari tepung beras, santan, dan gula.",
+      "bestseller": false,
+      "isNew": false,
+      "isPromo": false
+    },
+    {
+      "id": 1761369803702,
+      "name": "Risol Tower",
+      "price": 160000,
+      "cat": "Hantaran",
+      "img": "https://cdn.jsdelivr.net/gh/jandess/katalog@main/img/gal_1783426053285_1acwgh_soslo.jpg",
+      "images": [
+        "https://cdn.jsdelivr.net/gh/jandess/katalog@main/img/gal_1783426053285_1acwgh_soslo.jpg"
+      ],
+      "desc": "Sajian Risol yang disusun tinggi menyerupai tower, berisi sayuran segar, ayam, atau daging cincang dengan kulit lumpia renyah.",
+      "bestseller": false,
+      "isNew": false,
+      "isPromo": false
+    },
+    {
+      "id": 1761369883058,
+      "name": "Sosis solo Tower",
+      "price": 170000,
+      "cat": "Hantaran",
+      "img": "https://cdn.jsdelivr.net/gh/jandess/katalog@main/img/gal_1783426053285_1acwgh_soslo.jpg",
+      "images": [
+        "https://cdn.jsdelivr.net/gh/jandess/katalog@main/img/gal_1783426053285_1acwgh_soslo.jpg"
+      ],
+      "desc": "sajian soslo yang disusun tinggi menyerupai tower, ayam cincang dengan kulit lumpia renyah.",
+      "bestseller": false,
+      "isNew": false,
+      "isPromo": false
+    },
+    {
+      "id": 1761370004874,
+      "name": "Pastel",
+      "price": 125000,
+      "cat": "Hantaran",
+      "img": "https://cdn.jsdelivr.net/gh/jandess/katalog@main/img/gal_1783426016732_nnk3pa6_pastel.jpg",
+      "images": [
+        "https://cdn.jsdelivr.net/gh/jandess/katalog@main/img/gal_1783426016732_nnk3pa6_pastel.jpg"
+      ],
+      "desc": "kue goreng berbentuk setengah lingkaran dengan kulit tipis renyah dan isi sayuran, telur, ayam berbumbu gurih.",
+      "bestseller": false,
+      "isNew": false,
+      "isPromo": false
+    },
+    {
+      "id": 1761370218863,
+      "name": "Wajik + Jadah",
+      "price": 380000,
+      "cat": "Hantaran",
+      "img": "https://cdn.jsdelivr.net/gh/jandess/katalog@main/img/gal_1783425958007_20f8i_wajik_jadah.jpg",
+      "images": [
+        "https://cdn.jsdelivr.net/gh/jandess/katalog@main/img/gal_1783425958007_20f8i_wajik_jadah.jpg"
+      ],
+      "desc": "kue tradisional wajik manis legit dan jadah gurih lembut, terbuat dari beras ketan, gula merah, parutan kelapa dan santan.",
+      "bestseller": false,
+      "isNew": false,
+      "isPromo": false
+    },
+    {
+      "id": 1761370289022,
+      "name": "Lumpur Kentang",
+      "price": 148000,
+      "cat": "Hantaran",
+      "img": "https://cdn.jsdelivr.net/gh/jandess/katalog@main/img/gal_1783425890396_6nsbe_lumpurkentang.jpeg",
+      "images": [
+        "https://cdn.jsdelivr.net/gh/jandess/katalog@main/img/gal_1783425890396_6nsbe_lumpurkentang.jpeg"
+      ],
+      "desc": "kue tradisional lembut yang terbuat dari kentang, tepung, telur, dan gula, menghasilkan tekstur kenyal dan lembut.",
+      "bestseller": false,
+      "isNew": false,
+      "isPromo": false
+    },
+    {
+      "id": 1761370438578,
+      "name": "Parcell Buah Polynett",
+      "price": 300000,
+      "cat": "Hantaran",
+      "img": "https://cdn.jsdelivr.net/gh/jandess/katalog@main/img/gal_1783425799545_1z0bt8_Parcell_Buah_Polynett.jpg",
+      "images": [
+        "https://cdn.jsdelivr.net/gh/jandess/katalog@main/img/gal_1783425799545_1z0bt8_Parcell_Buah_Polynett.jpg"
+      ],
+      "desc": "Rangkaian buah segar pilihan yang disusun cantik dalam keranjang atau kemasan elegan, cocok untuk hadiah, ucapan selamat, atau hampers acara spesial.",
+      "bestseller": false,
+      "isNew": false,
+      "isPromo": false
+    },
+    {
+      "id": 1782210194360,
+      "name": "Parcell Buah Tyle",
+      "price": 250000,
+      "cat": "Hantaran",
+      "img": "https://cdn.jsdelivr.net/gh/jandess/katalog@main/img/gal_1783425715756_eq8z6n_Parcell_Buah_Tyle.jpg",
+      "images": [
+        "https://cdn.jsdelivr.net/gh/jandess/katalog@main/img/gal_1783425715756_eq8z6n_Parcell_Buah_Tyle.jpg"
+      ],
+      "desc": "Rangkaian buah segar pilihan yang disusun cantik dalam keranjang atau kemasan elegan, cocok untuk hadiah, ucapan selamat, atau hampers acara spesial.",
+      "bestseller": false,
+      "isNew": false,
+      "isPromo": false
+    },
+    {
+      "id": 1782210534128,
+      "name": "Floss roll",
+      "price": 160000,
+      "cat": "Hantaran",
+      "img": "https://rboiicqwzcdjxhnhkzkl.supabase.co/storage/v1/object/public/product-images/products/1782818932920-oxq8hi3tm5f.webp",
+      "images": [
+        "https://rboiicqwzcdjxhnhkzkl.supabase.co/storage/v1/object/public/product-images/products/1782818932920-oxq8hi3tm5f.webp"
+      ],
+      "desc": "Roti gulung panggang dengan isian abon gurih manis.",
+      "bestseller": false,
+      "isNew": false,
+      "isPromo": false
+    },
+    {
+      "id": 1785811228412,
+      "name": "Parcell Sembako",
+      "price": 165000,
+      "cat": "Hantaran",
+      "img": "https://cdn.jsdelivr.net/gh/jandess/katalog@main/img/sembako.jpg",
+      "images": [
+        "https://cdn.jsdelivr.net/gh/jandess/katalog@main/img/sembako.jpg"
+      ],
+      "desc": "Rangkaian gula , kopi bubuk hitm, kopi bubuk putih, dan teh yang disusun cantik dalam keranjang atau kemasan elegan, cocok untuk hadiah, ucapan selamat, atau hampers acara spesial.",
+      "bestseller": false,
+      "isNew": false,
+      "isPromo": false,
+      "isOutOfStock": false
+    },
+    {
+      "id": 1785811251530,
+      "name": "Parcell Pisang",
+      "price": 150000,
+      "cat": "",
+      "img": "https://cdn.jsdelivr.net/gh/jandess/katalog@main/img/pisang.jpg",
+      "images": [
+        "https://cdn.jsdelivr.net/gh/jandess/katalog@main/img/pisang.jpg"
+      ],
+      "desc": "Rangkaian pisang segar pilihan yang disusun cantik dalam keranjang atau kemasan elegan, cocok untuk hadiah, ucapan selamat, atau hampers acara spesial.",
+      "bestseller": false,
+      "isNew": false,
+      "isPromo": false,
+      "isOutOfStock": false
+    }
+  ],
+  "profile": {
+    "name": "Djandes",
+    "description": "DJANDES adalah home made kue basah lokal yang menyajikan berbagai macam kue tradisional dan modern dengan cita rasa autentik dan kualitas terbaik.",
+    "logo": "https://cdn.jsdelivr.net/gh/jandess/katalog@main/img/logo.png",
+    "whatsapp": "6285812006225",
+    "instagram": "djandes15",
+    "tiktok": "djandes15",
+    "facebook": "",
+    "address": "Jl. Anggrek , RT 004 / RW 013, Tegalrejo, Sawentar, Kanigoro, Blitar.",
+    "maps_embed": "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3949.8109453560633!2d112.2325264!3d-8.1207225!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e78ebac417b43f7%3A0x806e165d29a57022!2sDjandes%20Sweet%20and%20Savoury!5e0!3m2!1sen!2sid!4v1761329279400!5m2!1sen!2sid"
+  }
+}
